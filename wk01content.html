@@ -1,0 +1,78 @@
+<ARTICLE ID="Article_1">
+ <HEADER ID="Header_Article_1">
+  <H2>Building IoT Projects</H2>
+ </HEADER>
+
+ <SECTION ID="Section_1">
+  <H3>Week 1 Integration</H3>
+  <p>
+   <ol>
+   	<li>Happy New Year.</li>
+	<li>Feel free to take a look at: <a href="http://docs.aws.amazon.com/iot/latest/developerguide/iot-device-sdk-c.html">Getting Started with AWS IoT on the Raspberry Pi and the AWS IoT Embedded C SDK</a></li>
+	<li>Schedule for today: Introduction, Homework (fill in excel table for proposal).</li>
+	<li><a href="https://humber.ca/staff/events/humber-career-services-job-fair-2019">Job fair details</a></li>
+    <li>Start off by logging into a computer. Please visit the blackboard site.</li>
+	<li>Regarding computer issues please report them to ITS via Ali_dot_Owayid_at_humber_dot_ca and cc me to bring downed computers to our attention for repair.</li>
+	<li>Blackboard (Bio, Outline, Critical Path, Weeks).</li>
+    <li>The section you attend, are registered in, and are a group member in, must match.</li>
+    <li>Introduction to the course outline/blackboard/this site, two main objectives: your project (hardware with enterprise wireless, mobile application, database with web interface) and the matching <a href="https://www.oacett.org/downloads/get_certified/technology_report/Technology_Report_Guidelines.pdf">Technical Report</a>.</li> 
+    <li>Regarding project choice, students typically proceed with the hardware and mobile application from the prerequisite courses.</li>
+	<li>The maximum size of your project is in alignment with the <a href="https://raw.githubusercontent.com/six0four/StudentSenseHat/master/images/week1projectbox.jpg">space</a> below the tray in your Humber North Campus Electronics Parts kit (overall project maximum dimensions of 12 13/16" x 6" x 2 7/8" = 32.5cm x 15.25cm x 7.25cm), you are expected to bring both along with safety glasses every week otherwise there is a minimum one mark deduction on the week's submission.</li>
+    <li>In CENG 355 Computer Systems Project students work in groups to integrate their mobile application with their sensors and effectors to create an IoT device that for which both it and its application can independently
+	 connect to the same database. (The mobile application may, in addition, also connect directly via bluetooth to the IoT device.)
+	 <img src="https://raw.githubusercontent.com/six0four/StudentSenseHat/master/images/NetworkArchitectureFall2017.jpg"></li>
+    <li>The group's custom I2C PCBs can be stacked with the six pin stackable headers for each sensor/effector.
+	 The highest AC voltage that will be used is 16Vrms from a wall adaptor from which +/- 15V or as high as 45 VDC can be obtained. Maximum power consumption will be 20 Watts.</li>
+    <li>We work with prototypes and prototypes are not to be left powered unattended.</li>
+	<li>For next week: your group or you individually must choose the project's github site (belonging to student A), print your proposal to a pdf saved in the repository and hand me
+   (within the first fifteen minutes of next class) the two relevant pages printed out, the one with the inline citations and one with the references list (/5).</li>
+   <li>Having each part of the project present every week (including hardware) is required and forms a portion of that week's deliverable's grade.</li>
+    
+	 
+    <li>Fall 2018 I2C slave sensor and effector device choices to become the class expert on (including calibration) for which 6 pin stackable modules must be created:<ol>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Ishan STM32.</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Jay MAG3110 3-Axis Magnetometer (0x0E).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> David VCNL40x0 proximity sensor (0x13).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Anshul LIS3DH 3-axis accelerometer (0x18).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Ryan LSM303 Accelerometer & Magnetometer (0x19 for accelerometer and *0x1E for magnetometer).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Sean MCP9808 temp sensor (0x1A).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Arman MMA845x 3-axis Accelerometer (0x1C).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Bettin LSM9DS0 9-axis IMU (0x1D for Accel/Mag, *0x6A for Gyro).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Ryan *LSM303 Accelerometer & Magnetometer (0x19 for accelerometer and *0x1E for magnetometer).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Zhill FXOS8700 Accelerometer/Magnetometer (0x1F).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Jacob <a href="http://www.digole.com/index.php?productID=1215">Digole display</a> (0x27).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Juan CAP1188 8-channel Capacitive Touch (0x2A).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Anoopjot <a href="https://quadmeup.com/attiny85-light-sensor-i2c-slave-device/">Create your own I2C device - TMP36</a> (0x30).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Karan FT6x06 Capacitive Touch Driver (0x38).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Delroy SSD1306 monochrome OLED (0x3D).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Johnson HTU21D-F Humidity/Temp Sensor (0x40).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Sahil STMPE610/STMPE811 Resistive Touch controller (0x41).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Denald ISL29125 Color Sensor (0x44).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Kogul YL-40 PCF8591 (0x48).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Jordan DRV2605 Haptic Motor Driver (0x5A).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Princess CCS811 VOC sensor (0x5B).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Colin AM2315 Humidity/Temp sensor (0x5C).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Jonas MPR121 12-point capacitive touch sensor (0x5D).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Darren TEA5767 Radio receiver (0x60).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Kyele AMG8833 IR Thermal Camera Breakout (0x69).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Bettin *LSM9DS0 9-axis IMU (0x1D for Accel/Mag, *0x6A for Gyro).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Kenneth L3GD20H gyroscope (0x6B).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Kuljeet IS31FL3731 144-LED CharliePlex driver (0x74).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Gursehaj MS5607/MS5611 Barometric Pressure (0x76).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Samuel BME280 Temp/Barometric/Humidity (0x77).</li>
+	 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Marko PN532 NFC/RFID reader (Use UART pins 8:TX and 10:RX).</li>
+     <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Mykal <a href="https://mykalbailey.github.io/Surveillance-Cam/">TBD/alternate cam?</a>.</li>
+    </ol></li>
+   </ol>
+  <p>
+    <li>Homework:
+	 <ul>
+	  <li>Project Proposal: <a href="https://github.com/six0four/StudentSenseHat/tree/master/documentation/">documentation directory</a>, be sure to visit <a href="http://ieeexplore.ieee.org/search/advsearch.jsp">IEEE's advanced search</a>, click on “My Subscribed Content” from on campus, and type your search terms e.g. “SensorEffector” into the search field..</li>
+      <li><a href="http://library.humber.ca/APA-MLA">APA in minutes video</a>, more <a href="http://library.humber.ca/help/apa">APA video tutorials.</a></li>
+	   </ol></li>
+     </ul></li>
+   </ol>
+  </p>
+ </SECTION>
+
+</ARTICLE>
